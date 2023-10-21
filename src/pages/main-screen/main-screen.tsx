@@ -1,14 +1,21 @@
 import Header from '../../components/header';
 import PlaceCard from '../../components/place-card';
+import Logo from '../../components/logo';
+import HeaderNav from '../../components/header-nav';
 
 type MainIndexScreenProps = {
   placesCount: number;
 }
 
-export default function MainScreen({placesCount}: MainIndexScreenProps): JSX.Element {
+function MainScreen({placesCount}: MainIndexScreenProps): JSX.Element {
   return (
     <div className="page page--gray page--main">
-      <Header />
+      <Header>
+        <>
+          <Logo />
+          <HeaderNav />
+        </>
+      </Header>
 
       <main className="page__main page__main--index">
         <h1 className="visually-hidden">Cities</h1>
@@ -86,3 +93,4 @@ export default function MainScreen({placesCount}: MainIndexScreenProps): JSX.Ele
   );
 }
 
+export default MainScreen;

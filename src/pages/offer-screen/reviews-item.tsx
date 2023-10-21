@@ -1,4 +1,4 @@
-export default function ReviewsItem(): JSX.Element {
+function ReviewsItem(): JSX.Element {
   return (
     <li className="reviews__item">
       <div className="reviews__user user">
@@ -29,3 +29,5 @@ export default function ReviewsItem(): JSX.Element {
     </li>
   );
 }
+
+export default ReviewsItem;

@@ -1,4 +1,4 @@
-export default function OfferNotLogged(): JSX.Element {
+function OfferNotLogged(): JSX.Element {
   return (
     <div className="page">
       <header className="header">
@@ -332,3 +332,4 @@ export default function OfferNotLogged(): JSX.Element {
   );
 }
 
+export default OfferNotLogged;

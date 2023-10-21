@@ -1,4 +1,4 @@
-export default function LocationItem(): JSX.Element {
+function LocationItem(): JSX.Element {
   return (
     <li className="favorites__locations-items">
       <div className="favorites__locations locations locations--current">
@@ -88,3 +88,5 @@ export default function LocationItem(): JSX.Element {
     </li>
   );
 }
+
+export default LocationItem;

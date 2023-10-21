@@ -1,10 +1,12 @@
-import LoginHeader from './login-header';
+import Logo from '../../components/logo';
+import Header from '../../components/header';
 
-export default function LoginScreen(): JSX.Element {
+function LoginScreen(): JSX.Element {
   return (
     <div className="page page--gray page--login">
-      <LoginHeader />
-
+      <Header>
+        <Logo />
+      </Header>
       <main className="page__main page__main--login">
         <div className="page__login-container container">
           <section className="login">
@@ -44,3 +46,4 @@ export default function LoginScreen(): JSX.Element {
   );
 }
 
+export default LoginScreen;

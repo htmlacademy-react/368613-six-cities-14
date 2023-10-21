@@ -2,12 +2,15 @@ import styles from './not-found-screen.module.css';
 import { Link } from 'react-router-dom';
 import Header from '../../components/header';
 import Footer from '../../components/footer';
+import Logo from '../../components/logo';
 
-export default function NotFoundScreen(): JSX.Element {
+function NotFoundScreen(): JSX.Element {
   return (
     <div className={styles.pageNotFound}>
       <div className={styles.pageNotFoundContainer}>
-        <Header />
+        <Header>
+          <Logo />
+        </Header>
 
         <main className={styles.pageMainNotFound}>
           <div className="container">
@@ -25,4 +28,6 @@ export default function NotFoundScreen(): JSX.Element {
     </div>
   );
 }
+
+export default NotFoundScreen;
 

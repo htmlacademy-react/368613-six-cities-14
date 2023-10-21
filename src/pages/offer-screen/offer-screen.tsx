@@ -1,12 +1,19 @@
 import Header from '../../components/header';
+import Logo from '../../components/logo';
+import HeaderNav from '../../components/header-nav';
 import ReviewsItem from './reviews-item';
 import ReviewsForm from './reviews-form';
 import PlaceCard from '../../components/place-card';
 
-export default function OfferScreen(): JSX.Element {
+function OfferScreen(): JSX.Element {
   return (
     <div className="page">
-      <Header />
+      <Header>
+        <>
+          <Logo />
+          <HeaderNav />
+        </>
+      </Header>
 
       <main className="page__main page__main--offer">
         <section className="offer">
@@ -176,3 +183,5 @@ export default function OfferScreen(): JSX.Element {
     </div>
   );
 }
+
+export default OfferScreen;

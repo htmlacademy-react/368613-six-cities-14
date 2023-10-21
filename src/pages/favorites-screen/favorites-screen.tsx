@@ -1,11 +1,18 @@
 import Header from '../../components/header';
+import Logo from '../../components/logo';
+import HeaderNav from '../../components/header-nav';
 import LocationItem from './location-item';
 import Footer from '../../components/footer';
 
-export default function FavoritesScreen(): JSX.Element {
+function FavoritesScreen(): JSX.Element {
   return (
     <div className="page">
-      <Header />
+      <Header>
+        <>
+          <Logo />
+          <HeaderNav />
+        </>
+      </Header>
 
       <main className="page__main page__main--favorites">
         <div className="page__favorites-container container">
@@ -23,3 +30,5 @@ export default function FavoritesScreen(): JSX.Element {
     </div>
   );
 }
+
+export default FavoritesScreen;
