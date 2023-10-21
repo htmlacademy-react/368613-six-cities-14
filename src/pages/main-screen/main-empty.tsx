@@ -1,4 +1,4 @@
-function MainEmpty(): JSX.Element {
+export default function MainEmpty(): JSX.Element {
   return (
     <div className="page page--gray page--main">
       <header className="header">
@@ -9,8 +9,8 @@ function MainEmpty(): JSX.Element {
                 <img className="header__logo"
                   src="img/logo.svg"
                   alt="6 cities logo"
-                  width="81"
-                  height="41"
+                  width={81}
+                  height={41}
                 />
               </a>
             </div>
@@ -89,4 +89,3 @@ function MainEmpty(): JSX.Element {
   );
 }
 
-export default MainEmpty;

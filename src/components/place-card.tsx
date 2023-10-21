@@ -1,4 +1,4 @@
-function PlaceCard(): JSX.Element {
+export default function PlaceCard(): JSX.Element {
   return (
     <article className="cities__card place-card">
       <div className="place-card__mark">
@@ -8,8 +8,8 @@ function PlaceCard(): JSX.Element {
         <a href="#">
           <img className="place-card__image"
             src="img/apartment-01.jpg"
-            width="260"
-            height="200"
+            width={260}
+            height={200}
             alt="Place image"
           />
         </a>
@@ -21,7 +21,7 @@ function PlaceCard(): JSX.Element {
             <span className="place-card__price-text">&#47;&nbsp;night</span>
           </div>
           <button className="place-card__bookmark-button button" type="button">
-            <svg className="place-card__bookmark-icon" width="18" height="19">
+            <svg className="place-card__bookmark-icon" width={18} height={19}>
               <use xlinkHref="#icon-bookmark"></use>
             </svg>
             <span className="visually-hidden">To bookmarks</span>
@@ -41,5 +41,3 @@ function PlaceCard(): JSX.Element {
     </article>
   );
 }
-
-export default PlaceCard;

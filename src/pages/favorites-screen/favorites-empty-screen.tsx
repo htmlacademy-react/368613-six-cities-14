@@ -1,6 +1,6 @@
-import FavoritesFooter from './favorites-footer';
+import Footer from '../../components/footer';
 
-function FavoritesEmptyScreen(): JSX.Element {
+export default function FavoritesEmptyScreen(): JSX.Element {
   return (
     <div className="page page--favorites-empty">
       <header className="header">
@@ -11,8 +11,8 @@ function FavoritesEmptyScreen(): JSX.Element {
                 <img className="header__logo"
                   src="img/logo.svg"
                   alt="6 cities logo"
-                  width="81"
-                  height="41"
+                  width={81}
+                  height={41}
                 />
               </a>
             </div>
@@ -49,9 +49,7 @@ function FavoritesEmptyScreen(): JSX.Element {
         </div>
       </main>
 
-      <FavoritesFooter />
+      <Footer />
     </div>
   );
 }
-
-export default FavoritesEmptyScreen;

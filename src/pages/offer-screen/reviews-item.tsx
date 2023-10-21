@@ -1,12 +1,12 @@
-function ReviewsItem(): JSX.Element {
+export default function ReviewsItem(): JSX.Element {
   return (
     <li className="reviews__item">
       <div className="reviews__user user">
         <div className="reviews__avatar-wrapper user__avatar-wrapper">
           <img className="reviews__avatar user__avatar"
             src="img/avatar-max.jpg"
-            width="54"
-            height="54"
+            width={54}
+            height={54}
             alt="Reviews avatar"
           />
         </div>
@@ -29,5 +29,3 @@ function ReviewsItem(): JSX.Element {
     </li>
   );
 }
-
-export default ReviewsItem;

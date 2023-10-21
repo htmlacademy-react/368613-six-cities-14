@@ -1,6 +1,6 @@
 import LoginHeader from './login-header';
 
-function LoginScreen(): JSX.Element {
+export default function LoginScreen(): JSX.Element {
   return (
     <div className="page page--gray page--login">
       <LoginHeader />
@@ -44,4 +44,3 @@ function LoginScreen(): JSX.Element {
   );
 }
 
-export default LoginScreen;

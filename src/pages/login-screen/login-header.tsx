@@ -1,4 +1,4 @@
-function LoginHeader(): JSX.Element {
+export default function LoginHeader(): JSX.Element {
   return (
     <header className="header">
       <div className="container">
@@ -18,5 +18,3 @@ function LoginHeader(): JSX.Element {
     </header>
   );
 }
-
-export default LoginHeader;
