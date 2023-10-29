@@ -7,10 +7,8 @@ function MainEmpty(): JSX.Element {
   return (
     <div className="page page--gray page--main">
       <Header>
-        <>
-          <Logo />
-          <HeaderNav />
-        </>
+        <Logo />
+        <HeaderNav />
       </Header>
 
       <main className="page__main page__main--index page__main--index-empty">

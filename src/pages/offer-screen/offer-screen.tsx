@@ -9,10 +9,8 @@ function OfferScreen(): JSX.Element {
   return (
     <div className="page">
       <Header>
-        <>
-          <Logo />
-          <HeaderNav />
-        </>
+        <Logo />
+        <HeaderNav />
       </Header>
 
       <main className="page__main page__main--offer">

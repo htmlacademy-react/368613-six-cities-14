@@ -1,5 +1,7 @@
+import React from 'react';
+
 type HeaderProps = {
-  children: JSX.Element;
+  children: React.ReactNode;
 };
 
 function Header({ children }: HeaderProps): JSX.Element {
@@ -7,7 +9,9 @@ function Header({ children }: HeaderProps): JSX.Element {
     <header className="header">
       <div className="container">
         <div className="header__wrapper">
-          {children}
+          {React.Children.map(children, (child) => (
+            <div className="header__child">{child}</div>
+          ))}
         </div>
       </div>
     </header>
