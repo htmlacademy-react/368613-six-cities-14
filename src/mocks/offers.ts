@@ -1,8 +1,8 @@
-import { Offer } from '../types/offers';
+import { Offer } from '../types/offer';
 
 const offers: Offer[] = [
   {
-    id: 1,
+    id: '1',
     title: 'Beautiful & luxurious studio at great location',
     type: 'apartment',
     price: 120,
@@ -12,9 +12,22 @@ const offers: Offer[] = [
     isPremium: false,
     isFavorite: true,
     description: 'A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam.',
-    previewImage: 'img/1.png',
+    previewImage: 'https://14.react.pages.academy/static/offer/3.jpg',
     images: [
-      'img/1.png'
+      'https://14.react.pages.academy/static/offer/16.jpg',
+      'https://14.react.pages.academy/static/offer/13.jpg',
+      'https://14.react.pages.academy/static/offer/6.jpg',
+      'https://14.react.pages.academy/static/offer/11.jpg',
+      'https://14.react.pages.academy/static/offer/14.jpg',
+      'https://14.react.pages.academy/static/offer/9.jpg',
+      'https://14.react.pages.academy/static/offer/2.jpg',
+      'https://14.react.pages.academy/static/offer/15.jpg',
+      'https://14.react.pages.academy/static/offer/7.jpg',
+      'https://14.react.pages.academy/static/offer/17.jpg',
+      'https://14.react.pages.academy/static/offer/4.jpg',
+      'https://14.react.pages.academy/static/offer/8.jpg',
+      'https://14.react.pages.academy/static/offer/10.jpg',
+      'https://14.react.pages.academy/static/offer/5.jpg'
     ],
     location: {
       latitude: 52.35514938496378,
@@ -30,17 +43,16 @@ const offers: Offer[] = [
       }
     },
     host: {
-      id: 3,
       name: 'Angelina',
       isPro: true,
-      avatarUrl: 'img/1.png'
+      avatarUrl: 'img/avatar-angelina.jpg'
     },
     goods: [
       'Heating'
     ]
   },
   {
-    id: 2,
+    id: '2',
     title: 'Cozy and warm apartment in the heart of Paris',
     type: 'apartment',
     price: 80,
@@ -50,11 +62,22 @@ const offers: Offer[] = [
     isPremium: true,
     isFavorite: false,
     description: 'A cozy and warm apartment located in the heart of Paris, perfect for a romantic getaway.',
-    previewImage: 'img/2.png',
+    previewImage: 'https://14.react.pages.academy/static/offer/6.jpg',
     images: [
-      'img/2.png',
-      'img/3.png',
-      'img/4.png'
+      'https://14.react.pages.academy/static/offer/16.jpg',
+      'https://14.react.pages.academy/static/offer/13.jpg',
+      'https://14.react.pages.academy/static/offer/6.jpg',
+      'https://14.react.pages.academy/static/offer/11.jpg',
+      'https://14.react.pages.academy/static/offer/14.jpg',
+      'https://14.react.pages.academy/static/offer/9.jpg',
+      'https://14.react.pages.academy/static/offer/2.jpg',
+      'https://14.react.pages.academy/static/offer/15.jpg',
+      'https://14.react.pages.academy/static/offer/7.jpg',
+      'https://14.react.pages.academy/static/offer/17.jpg',
+      'https://14.react.pages.academy/static/offer/4.jpg',
+      'https://14.react.pages.academy/static/offer/8.jpg',
+      'https://14.react.pages.academy/static/offer/10.jpg',
+      'https://14.react.pages.academy/static/offer/5.jpg'
     ],
     location: {
       latitude: 48.856614,
@@ -70,10 +93,9 @@ const offers: Offer[] = [
       }
     },
     host: {
-      id: 1,
       name: 'John',
       isPro: false,
-      avatarUrl: 'img/5.png'
+      avatarUrl: 'img/avatar-angelina.jpg'
     },
     goods: [
       'Wi-Fi',
@@ -82,7 +104,7 @@ const offers: Offer[] = [
     ]
   },
   {
-    id: 3,
+    id: '3',
     title: 'Spacious and modern apartment in New York',
     type: 'apartment',
     price: 200,
@@ -92,11 +114,22 @@ const offers: Offer[] = [
     isPremium: true,
     isFavorite: true,
     description: 'A spacious and modern apartment located in the heart of New York City, perfect for a family vacation.',
-    previewImage: 'img/6.png',
+    previewImage: 'https://14.react.pages.academy/static/offer/2.jpg',
     images: [
-      'img/6.png',
-      'img/7.png',
-      'img/8.png'
+      'https://14.react.pages.academy/static/offer/16.jpg',
+      'https://14.react.pages.academy/static/offer/13.jpg',
+      'https://14.react.pages.academy/static/offer/6.jpg',
+      'https://14.react.pages.academy/static/offer/11.jpg',
+      'https://14.react.pages.academy/static/offer/14.jpg',
+      'https://14.react.pages.academy/static/offer/9.jpg',
+      'https://14.react.pages.academy/static/offer/2.jpg',
+      'https://14.react.pages.academy/static/offer/15.jpg',
+      'https://14.react.pages.academy/static/offer/7.jpg',
+      'https://14.react.pages.academy/static/offer/17.jpg',
+      'https://14.react.pages.academy/static/offer/4.jpg',
+      'https://14.react.pages.academy/static/offer/8.jpg',
+      'https://14.react.pages.academy/static/offer/10.jpg',
+      'https://14.react.pages.academy/static/offer/5.jpg'
     ],
     location: {
       latitude: 40.712776,
@@ -112,10 +145,9 @@ const offers: Offer[] = [
       }
     },
     host: {
-      id: 2,
       name: 'Sarah',
       isPro: true,
-      avatarUrl: 'img/9.png'
+      avatarUrl: 'img/avatar-angelina.jpg'
     },
     goods: [
       'Wi-Fi',
@@ -126,7 +158,7 @@ const offers: Offer[] = [
     ]
   },
   {
-    id: 4,
+    id: '4',
     title: 'Charming and cozy cottage in the countryside',
     type: 'house',
     price: 150,
@@ -136,11 +168,22 @@ const offers: Offer[] = [
     isPremium: false,
     isFavorite: false,
     description: 'A charming and cozy cottage located in the beautiful countryside, perfect for a peaceful retreat.',
-    previewImage: 'img/10.png',
+    previewImage: 'https://14.react.pages.academy/static/offer/8.jpg',
     images: [
-      'img/10.png',
-      'img/11.png',
-      'img/12.png'
+      'https://14.react.pages.academy/static/offer/16.jpg',
+      'https://14.react.pages.academy/static/offer/13.jpg',
+      'https://14.react.pages.academy/static/offer/6.jpg',
+      'https://14.react.pages.academy/static/offer/11.jpg',
+      'https://14.react.pages.academy/static/offer/14.jpg',
+      'https://14.react.pages.academy/static/offer/9.jpg',
+      'https://14.react.pages.academy/static/offer/2.jpg',
+      'https://14.react.pages.academy/static/offer/15.jpg',
+      'https://14.react.pages.academy/static/offer/7.jpg',
+      'https://14.react.pages.academy/static/offer/17.jpg',
+      'https://14.react.pages.academy/static/offer/4.jpg',
+      'https://14.react.pages.academy/static/offer/8.jpg',
+      'https://14.react.pages.academy/static/offer/10.jpg',
+      'https://14.react.pages.academy/static/offer/5.jpg'
     ],
     location: {
       latitude: 51.507351,
@@ -156,10 +199,9 @@ const offers: Offer[] = [
       }
     },
     host: {
-      id: 4,
       name: 'David',
       isPro: false,
-      avatarUrl: 'img/13.png'
+      avatarUrl: 'img/avatar-angelina.jpg'
     },
     goods: [
       'Fireplace',
@@ -169,4 +211,4 @@ const offers: Offer[] = [
   }
 ];
 
-export default offers;
+export { offers };
